@@ -117,7 +117,7 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Quick Links & Contact */}
+          {/* Quick Links & Contact - Fixed spacing between columns */}
           <motion.div
             className="lg:col-span-2"
             initial={{ opacity: 0, x: 20 }}
@@ -125,7 +125,7 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12"> {/* Increased gap from gap-8 to gap-12 */}
               {/* Quick Links */}
               <div>
                 <h3 className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
@@ -149,31 +149,33 @@ const Footer = () => {
                 </ul>
               </div>
 
-              {/* Contact Info */}
-              <div>
+              {/* Contact Info - Added right padding for extra space */}
+              <div className="pr-4"> {/* Added right padding */}
                 <h3 className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
                   <span className="w-2 h-6 bg-gradient-to-b from-blue-500 to-blue-600 rounded-full"></span>
                   Contact Info
                 </h3>
-                <ul className="space-y-6"> 
+                <ul className="space-y-6">
                   {contactInfo.map((item, index) => (
-                    <li key={index}>
+                    <li key={index} className="break-words"> {/* Added break-words */}
                       <a
                         href={item.href || '#'}
                         className={`group flex items-start gap-3 text-gray-400 ${item.hoverColor || 'hover:text-blue-300'} transition-colors duration-300`}
                       >
-                        <div className={`p-2 rounded-lg ${item.color.replace('text', 'bg')} bg-opacity-10 group-hover:bg-opacity-20 transition-all`}>
+                        <div className={`p-2 rounded-lg ${item.color.replace('text', 'bg')} bg-opacity-10 group-hover:bg-opacity-20 transition-all flex-shrink-0`}>
                           {item.icon}
                         </div>
-                        <span className="pt-1.5">{item.text}</span>
+                        <span className="pt-1.5 break-all text-sm md:text-base"> {/* Added break-all and responsive text size */}
+                          {item.text}
+                        </span>
                       </a>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              {/* Social Media */}
-              <div>
+              {/* Social Media - Added left padding for extra space */}
+              <div className="pl-4"> {/* Added left padding */}
                 <h3 className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
                   <span className="w-2 h-6 bg-gradient-to-b from-blue-600 to-blue-700 rounded-full"></span>
                   Connect With Me
