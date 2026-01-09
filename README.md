@@ -1,6 +1,6 @@
 # 💼 Financial Advisor Portfolio Website
 
-A professional, responsive portfolio website developed for a real client — a Financial Advisor working with **Sri Lanka Insurance Life**.  
+A professional, responsive portfolio website developed for a real client, a Financial Advisor working with **Sri Lanka Insurance Life**.  
 This website is designed using psychological marketing strategies to build trust, highlight achievements, and attract potential insurance clients.
 
 Built using **React + Vite + Tailwind CSS**.
