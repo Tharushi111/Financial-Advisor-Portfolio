@@ -25,7 +25,8 @@ This project reflects real-world business requirements and branding needs.
 ## 🌐 Live Demo
 
 🔗 Live Website:  
-rakindu-rajapaksha.netlify.app
+https://rakindu-rajapaksha.netlify.app
+
 
 ---
 
