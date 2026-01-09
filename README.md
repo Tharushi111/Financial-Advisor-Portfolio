@@ -58,7 +58,6 @@ https://your-site-name.netlify.app
 ## 💖 Designed & Developed By
 
 **Tharushi Paranagama**  
-Frontend Developer | UI/UX Designer  
 
 🔗 LinkedIn:  
 https://www.linkedin.com/in/tharushi-paranagama-a0b657355
