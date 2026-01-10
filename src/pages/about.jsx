@@ -8,7 +8,7 @@ import {
   FaLightbulb,
   FaStar,
 } from "react-icons/fa";
-import fullBodyPhoto from "../assets/aboutme1.png";
+import fullBodyPhoto from "../assets/about.jpeg";
 
 export default function About() {
 
